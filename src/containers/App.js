@@ -40,7 +40,8 @@ class App extends Component
         // destructuring to be done. 
         //const {robots, searchField} = this.state ;
 
-        const filteredRobots = this.state.robots.filter(robot => {
+        const filteredRobots = this.state.robots.
+                                filter(robot => {
             return robot.name.toLowerCase().includes(this.state.searchField.toLowerCase()) ;
         })
         
